@@ -214,7 +214,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -278,6 +278,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -310,7 +311,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
-  width: 10rem;
+  width: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -558,6 +559,7 @@ a {
 .callout {
   border-radius: 5px;
   padding: 4rem;
+  margin: 1rem;
 }
 
 .callout--primary {
@@ -578,6 +580,10 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
+}
+
+.callout-signup {
+  transform: translateY(10rem);
 }
 
 @media screen and (min-width: 768px) {
@@ -768,8 +774,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
@@ -841,9 +848,10 @@ a {
   }
 }
 
-/* Testimonials block */
+/* Footer */
 
 .footer {
+  padding-top: 20rem;
   background: #232323;
 }
 
